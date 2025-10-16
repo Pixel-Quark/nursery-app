@@ -13,22 +13,22 @@ const ProductListing = () => {
             {
               name: "Lavender",
               desc: "Soothing fragrance for calmness.  10$",
-              img: "True-Lavender-plant.webp",
+              img: "paradise-nursery/src/assets/True-Lavender-plant.webp",
             },
             {
               name: "Rosemary",
               desc: "Aromatic herb for your kitchen and mind.  10$",
-              img: "rosemary.jpg",
+              img: "paradise-nursery/src/assets/rosemary.jpg",
             },
             {
               name: "Mint",
               desc: "Refreshing aroma, perfect for tea and drinks.  10$",
-              img: "mint plant.jpg",
+              img: "paradise-nursery/src/assets/mint plant.jpg",
             },
             {
               name: "Jasmine",
               desc: "Delicate and sweet scent loved by all.  10$",
-              img: "jasmine.jpg",
+              img: "paradise-nursery/src/assets/jasmine.jpg",
             },
           ].map((p) => (
             <PlantCard key={p.name} {...p} />
@@ -45,22 +45,22 @@ const ProductListing = () => {
             {
               name: "Aloe Vera",
               desc: "Natural healer for skin and burns.  10$",
-              img: "aloe vera.jpg",
+              img: "paradise-nursery/src/assets/aloe vera.jpg",
             },
             {
               name: "Tulsi (Holy Basil)",
               desc: "Sacred herb with multiple health benefits.   10$",
-              img: "tulsi.png",
+              img: "paradise-nursery/src/assets/tulsi.png",
             },
             {
               name: "Neem",
               desc: "Powerful medicinal tree for detoxifying.   10$",
-              img: "neem.webp",
+              img: "paradise-nursery/src/assets/neem.webp",
             },
             {
               name: "Ashwagandha",
               desc: "Stress-relieving plant used in Ayurveda.    10$",
-              img: "ashwagandha plant.jpg",
+              img: "paradise-nursery/src/assets/ashwagandha plant.jpg",
             },
           ].map((p) => (
             <PlantCard key={p.name} {...p} />
