@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/paradise-nursery/' // <-- replace with your repo name exactly
+  base: '/nursery-app/' // <-- replace with your repo name exactly
 })
