@@ -2,14 +2,15 @@
   "name": "paradise-nursery",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Pixel-Quark/nursery-app",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
     "react": "^19.1.1",
