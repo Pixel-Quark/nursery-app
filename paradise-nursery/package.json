@@ -2,6 +2,7 @@
   "name": "paradise-nursery",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://github.com/Pixel-Quark/nursery-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
