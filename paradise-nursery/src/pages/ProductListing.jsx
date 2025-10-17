@@ -1,3 +1,5 @@
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
 import lavender from "../assets/true-lavender-plant.jpg";
 import rosemary from "../assets/rosemary.jpg";
 import mint from "../assets/mint-plant.jpg";
