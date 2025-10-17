@@ -1,5 +1,13 @@
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
+import lavender from "../assets/true-lavender-plant.webp";
+import rosemary from "../assets/rosemary.jpg";
+import mint from "../assets/mint-plant.jpg";
+import jasmine from "../assets/jasmine.jpg";
+import aloe from "../assets/aloe-vera.jpg";
+import tulsi from "../assets/tulsi.png";
+import neem from "../assets/neem.webp";
+import ashwagandha from "../assets/ashwagandha-plant.jpg";
 
 const ProductListing = () => {
   return (
@@ -13,22 +21,22 @@ const ProductListing = () => {
             {
               name: "Lavender",
               desc: "Soothing fragrance for calmness.  10$",
-              img: "/True-Lavender-plant.webp",
+              img: lavender,
             },
             {
               name: "Rosemary",
               desc: "Aromatic herb for your kitchen and mind.  10$",
-              img: "/assets/rosemary.jpg",
+              img: rosemary,
             },
             {
               name: "Mint",
               desc: "Refreshing aroma, perfect for tea and drinks.  10$",
-              img: "/assets/mint plant.jpg",
+              img: mint,
             },
             {
               name: "Jasmine",
               desc: "Delicate and sweet scent loved by all.  10$",
-              img: "/assets/jasmine.jpg",
+              img: jasmine,
             },
           ].map((p) => (
             <PlantCard key={p.name} {...p} />
@@ -45,22 +53,22 @@ const ProductListing = () => {
             {
               name: "Aloe Vera",
               desc: "Natural healer for skin and burns.  10$",
-              img: "/assets/aloe vera.jpg",
+              img: aloe,
             },
             {
               name: "Tulsi (Holy Basil)",
               desc: "Sacred herb with multiple health benefits.   10$",
-              img: "/assets/tulsi.png",
+              img: tulsi,
             },
             {
               name: "Neem",
               desc: "Powerful medicinal tree for detoxifying.   10$",
-              img: "/assets/neem.webp",
+              img: neem,
             },
             {
               name: "Ashwagandha",
               desc: "Stress-relieving plant used in Ayurveda.    10$",
-              img: "/assets/ashwagandha plant.jpg",
+              img: ashwagandha,
             },
           ].map((p) => (
             <PlantCard key={p.name} {...p} />
