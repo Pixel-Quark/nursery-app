@@ -7,16 +7,6 @@ const LandingPage = () => {
       className="landing-container"
       style={{
         backgroundImage: `url(${bg})`, // ✅ imported image
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        minHeight: "80vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        textAlign: "center",
-        padding: "80px 20px",
-        color: "rgb(0,0,0)",
-        backdropFilter: "brightness(0.8)",
       }}
     >
       <h1>Welcome to Paradise Nursery 🌱</h1>
