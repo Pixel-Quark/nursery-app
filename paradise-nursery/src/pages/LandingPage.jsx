@@ -1,6 +1,5 @@
-import bg from "../assets/natural-green-leaves.jpg";
 import { Link } from "react-router-dom";
-import "./LandingPage.css";
+import bg from "../assets/natural-green-leaves.jpg";
 
 const LandingPage = () => {
   return (
