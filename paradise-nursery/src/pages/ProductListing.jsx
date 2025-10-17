@@ -1,12 +1,10 @@
-import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice";
-import lavender from "../assets/True-Lavender-plant.webp";
+import lavender from "../assets/true-lavender-plant.jpg";
 import rosemary from "../assets/rosemary.jpg";
 import mint from "../assets/mint-plant.jpg";
 import jasmine from "../assets/jasmine.jpg";
 import aloe from "../assets/aloe-vera.jpg";
-import tulsi from "../assets/tulsi.png";
-import neem from "../assets/neem.webp";
+import tulsi from "../assets/tulsi.jpg";
+import neem from "../assets/neem.jpg";
 import ashwagandha from "../assets/ashwagandha-plant.jpg";
 
 const ProductListing = () => {
