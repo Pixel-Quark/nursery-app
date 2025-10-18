@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import LandingPage from "./pages/LandingPage";
 import ProductListing from "./pages/ProductListing";
 import CartPage from "./pages/CartPage";
-import "./styles.css";
 
 const App = () => {
   return (
@@ -11,6 +10,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<LandingPage />} />
         <Route path="/products" element={<ProductListing />} />
         <Route path="/cart" element={<CartPage />} />
       </Routes>

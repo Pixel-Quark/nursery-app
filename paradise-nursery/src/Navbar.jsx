@@ -6,7 +6,7 @@ const Navbar = () => {
   const count = items.reduce((sum, i) => sum + i.quantity, 0);
 
   return (
-    <nav>
+    <nav className="navbar">
       <h2>🌿 Paradise Nursery</h2>
       <div>
         <Link to="/">Home</Link>

@@ -1,57 +1,35 @@
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
-import "../styles.css"; // your global CSS
+import "../styles.css";
+import lavender from "../assets/true-lavender-plant.webp";
+import rosemary from "../assets/rosemary.jpg";
+import mint from "../assets/mint-plant.jpg";
+import jasmine from "../assets/jasmine.jpg";
+import aloe from "../assets/aloe-vera.jpg";
+import tulsi from "../assets/tulsi.png";
+import neem from "../assets/neem.webp";
+import ashwagandha from "../assets/ashwagandha-plant.jpg";
+
 
 const ProductListing = () => {
   const aromaticPlants = [
-    {
-      name: "Lavender",
-      desc: "Soothing fragrance for calmness. 10$",
-      img: "/assets/true-lavender-plant.webp",
-    },
-    {
-      name: "Rosemary",
-      desc: "Aromatic herb for your kitchen and mind. 10$",
-      img: "/assets/rosemary.jpg",
-    },
-    {
-      name: "Mint",
-      desc: "Refreshing aroma, perfect for tea and drinks. 10$",
-      img: "/assets/mint-plant.jpg",
-    },
-    {
-      name: "Jasmine",
-      desc: "Delicate and sweet scent loved by all. 10$",
-      img: "/assets/jasmine.jpg",
-    },
-  ];
+  { name: "Lavender", desc: "Soothing fragrance for calmness. $10", img: lavender },
+  { name: "Rosemary", desc: "Aromatic herb for your kitchen and mind. $10", img: rosemary },
+  { name: "Mint", desc: "Refreshing aroma, perfect for tea and drinks. $10", img: mint },
+  { name: "Jasmine", desc: "Delicate and sweet scent loved by all. $10", img: jasmine },
+];
 
-  const medicinalPlants = [
-    {
-      name: "Aloe Vera",
-      desc: "Natural healer for skin and burns. 10$",
-      img: "/assets/aloe-vera.jpg",
-    },
-    {
-      name: "Tulsi (Holy Basil)",
-      desc: "Sacred herb with multiple health benefits. 10$",
-      img: "/assets/tulsi.png",
-    },
-    {
-      name: "Neem",
-      desc: "Powerful medicinal tree for detoxifying. 10$",
-      img: "/assets/neem.webp",
-    },
-    {
-      name: "Ashwagandha",
-      desc: "Stress-relieving plant used in Ayurveda. 10$",
-      img: "/assets/ashwagandha-plant.jpg",
-    },
-  ];
+const medicinalPlants = [
+  { name: "Aloe Vera", desc: "Natural healer for skin and burns. $10", img: aloe },
+  { name: "Tulsi (Holy Basil)", desc: "Sacred herb with multiple health benefits. $10", img: tulsi },
+  { name: "Neem", desc: "Powerful medicinal tree for detoxifying. $10", img: neem },
+  { name: "Ashwagandha", desc: "Stress-relieving plant used in Ayurveda. $10", img: ashwagandha },
+];
+
+
 
   return (
-    <div>
-      {/* Aromatic Plants Section */}
+    <div className="listing-container">
       <section className="product-section">
         <h2>🌸 Aromatic Plants</h2>
         <p>Perfect for relaxation and natural fragrance.</p>
@@ -62,7 +40,6 @@ const ProductListing = () => {
         </div>
       </section>
 
-      {/* Medicinal Plants Section */}
       <section className="product-section">
         <h2>🌿 Medicinal Plants</h2>
         <p>Bring health and wellness into your life with our natural healing plants.</p>
@@ -81,13 +58,10 @@ const PlantCard = ({ name, desc, img }) => {
 
   return (
     <div className="plant-card">
-      <img src={img} alt={name} />
+      <img src={img} alt={name} className="plant-img" />
       <h3>{name}</h3>
       <p>{desc}</p>
-      <button
-        className="add-btn"
-        onClick={() => dispatch(addToCart({ name, img }))}
-      >
+      <button className="add-btn" onClick={() => dispatch(addToCart({ name, img }))}>
         Add to Cart
       </button>
     </div>

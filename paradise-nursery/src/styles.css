@@ -1,147 +1,132 @@
-/* ---------- General Styles ---------- */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f6fff7;
-  color: #2e3d29;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f9f6;
+  color: #333;
 }
 
-/* ---------- Navbar ---------- */
-nav {
-  background-color: #2e8b57;
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 1rem 2rem;
+  background: #57974c;
   color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-nav h2 {
-  margin: 0;
-  font-size: 24px;
-}
-
-nav a {
+.navbar a {
   color: white;
+  margin-left: 1rem;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
-
-nav a:hover {
-  color: #e8ffe8;
+.navbar a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Buttons ---------- */
-button {
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* ---------- Landing Page ---------- */
-.landing-container {
-  text-align: center;
-  padding: 80px 20px;
-  background-size: cover;
-  color: rgb(0, 0, 0);
-  min-height: 80vh;
+/* Landing Page */
+.landing {
+  background: url("/src/assets/bgggg.jpg") center/cover no-repeat;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  backdrop-filter: brightness(0.8);
 }
-
-.landing-container h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+.overlay {
+  background-color: rgb(78, 131, 66);
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
 }
-
-.landing-container p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.shop-btn {
-  background-color: #2e8b57;
+.btn-main {
+  padding: 10px 20px;
+  background: #215e21;
   border: none;
   color: white;
-  padding: 15px 30px;
-  border-radius: 6px;
-  font-size: 18px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
-/* ---------- Product Page ---------- */
+/* Product Listing */
 .product-section {
-  padding: 60px 40px;
   text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem 0;
 }
-
-.product-section h2 {
-  color: #2e8b57;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.product-section p {
-  color: #444;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centers the grid */
-  gap: 30px;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
 }
-
 .plant-card {
-  background-color: #ffffff;
-  border: 1px solid #d6e8d6;
+  background: rgb(57, 76, 56);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  width: 260px;
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  color: white;
 }
-
 .plant-card img {
   width: 100%;
-  border-radius: 10px;
   height: 180px;
   object-fit: cover;
+  border-radius: 8px;
 }
-
-
 .add-btn {
-  background-color: #2e8b57;
+  background: #1d8e21;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 12px;
   border-radius: 6px;
-  margin-top: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: #0a370c;
 }
 
-/* ---------- Cart Page ---------- */
-.cart-container {
+/* Cart */
+.cart-page {
+  padding: 2rem;
   text-align: center;
-  padding: 60px;
 }
-
-.cart-container h2 {
-  color: #2e8b57;
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 80%;
+}
+.cart-item img {
+  width: 100px;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+.cart-btns button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cart-btns button:hover {
+  background: #43a047;
+}
+.checkout-btns button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.checkout-btns button:hover {
+  background: #388e3c;
 }
