@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/nursery-app/' // <-- replace with your repo name exactly
+  base: './' // <-- relative paths for Netlify
 })
